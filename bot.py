@@ -4,10 +4,9 @@ from datetime import datetime, timedelta
 from telegram import Update, InlineKeyboardButton, InlineKeyboardMarkup
 from telegram.ext import Application, CommandHandler, MessageHandler, filters, ContextTypes, ConversationHandler, CallbackQueryHandler
 from dotenv import load_dotenv
-import re
+import os
 
-load_dotenv()
-BOT_TOKEN = "8439932038:AAGHVntB9u4PGhGywdaViffzml0KlXWXmA4"
+BOT_TOKEN = os.getenv( "8439932038:AAGHVntB9u4PGhGywdaViffzml0KlXWXmA4")
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
